@@ -1,0 +1,169 @@
+<div class="container ">
+    <section class="page4_section relative">
+        <div class="page4_section_flex">
+            <div class="page4_section_title">
+                ABOUT US
+            </div>
+            <div class="page4_section_title2">
+                We are a team of content writers who share their learnings
+            </div>
+        </div>
+        <div class="page4_section_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </section>
+</div>
+
+<div class="container2">    
+<section class="page4_section_background">
+    <div class="page4_section2_flex">
+        <div class="page4_section2_flex2">
+            <div class="page4_section2_title">
+                12+
+            </div>
+            <div  class="page4_section2_text">
+                Blogs Published
+            </div>
+        </div>
+        <div class="page4_section2_flex2">
+            <div class="page4_section2_title">
+                18K+
+            </div>
+            <div class="page4_section2_text">
+                Views on Finsweet
+            </div>
+        </div>
+        <div class="page4_section2_flex2">
+            <div  class="page4_section2_title">
+                30K+
+            </div>
+            <div  class="page4_section2_text">
+                Total active Users
+            </div>
+        </div>
+    </div>
+    <div class="page4_section2_line">
+    </div>
+    <div class="page4_section2_line2">
+    </div>
+    
+</section>
+    <section class="page4_section3_flex">
+        <div class="page4_section3_block">
+            <div class="page4_section3_title"> Our mision</div>
+            <div class="page4_section3_text">Creating valuable content for creatives all around the world</div>
+            <div class="page4_section3_text2">Lorem ipsum dolor sit 
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                 incididunt ut labore et dolore magna aliqua. Non blandit
+                  massa enim nec. Scelerisque viverra mauris in 
+                aliquam sem. At risus viverra adipiscing at in tellus.</div>
+        </div>
+        <div class="page4_section3_block">
+            <div class="page4_section3_title"> Our mision</div>
+            <div class="page4_section3_text">Creating valuable content for creatives all around the world</div>
+            <div class="page4_section3_text2">Lorem ipsum dolor sit 
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                 incididunt ut labore et dolore magna aliqua. Non blandit
+                  massa enim nec. Scelerisque viverra mauris in 
+                aliquam sem. At risus viverra adipiscing at in tellus.</div>
+        </div>
+    </section>
+    <div class="page4_section4_flex">
+        <div class="page4_section4_block">
+            <div class="page4_section4_title"> Our team of creatives</div>
+            <div class="page4_section4_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+                smod tempor incididunt.</div>
+            <div class="page4_section4_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+                smod tempor 
+                 ut labore et dol
+                ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati
+                on ullamco laboris nisi ut aliquip e
+                x ea commodo consequat. Duis aute irure dolor in reprehenderit in v
+                oluptate velit esse cillum dolore eu fugiat.</div>
+        </div>
+        <div class="page4_section4_img">
+            <div class="page4_figure"></div>
+            <img src="assets/images//ground-group-growth-hands-461049.png">
+        </div>
+        
+    </div>
+    <div class="page4_section5_flex">
+
+        <div class="page4_section5_img">
+            <img src="assets/images//three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.png">
+        </div>
+        <div class="page4_section5_block">
+            <div class="page4_section4_title"> Our team of creatives</div>
+            <div class="page4_section4_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+                smod tempor incididunt.</div>
+            <div class="page4_section4_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+                smod tempor 
+                 ut labore et dol
+                ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati
+                on ullamco laboris nisi ut aliquip e
+                x ea commodo consequat. Duis aute irure dolor in reprehenderit in v
+                oluptate velit esse cillum dolore eu fugiat.</div>
+        </div>
+    </div>
+    <div class="container">  <span class="section5_span">List of Authors</span>
+        <div class=" section5">
+
+         <div *ngFor="let item of usersInfo" >
+            
+        <a [routerLink]="['blog/',item.id]" routerLinkActive="active">
+            <section class="page4_section6">
+                <div class="section5_author">
+                    <div class="section5_author_icon">
+                        <img [src]="item.image" class="section5_img">
+                    </div>
+                    <div class="section5_author_name">
+                       {{item.name}}
+                    </div>
+                    <div class="section5_author_text">
+                        {{item.short_description}}
+                    </div>
+                    <div class="section5_author_media">
+                        <a class="facebook" href="https://www.facebook.com/"><img [src]="item.facebook"></a>
+                        <a class="twitter" href="https://twitter.com/?lang=ru"><img [src]="item.twiter"></a>
+                        <a class="insta" href="https://www.instagram.com/"><img [src]="item.instagram"></a>
+                        <a class="linkedIn" href="https://www.linkedin.com/"><img [src]="item.in"></a>
+                    </div>
+                </div>
+                
+                
+            </section>
+            </a>
+            <a [routerLink]="['blog/',item.id]" routerLinkActive="active">
+                <section class="page4_section6">
+                    <div class="section5_author">
+                        <div class="section5_author_icon">
+                            <img [src]="item.image" class="section5_img">
+                        </div>
+                        <div class="section5_author_name">
+                           {{item.name}}
+                        </div>
+                        <div class="section5_author_text">
+                            {{item.short_description}}
+                        </div>
+                        <div class="section5_author_media">
+                            <a class="facebook"><img [src]="item.facebook"></a>
+                            <a class="twitter"><img [src]="item.twiter"></a>
+                            <a class="insta"><img [src]="item.instagram"></a>
+                            <a class="linkedIn"><img [src]="item.in"></a>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+             </a>
+         </div>
+        </div>
+    </div>
+ 
+
+</div>
+<!-- <p>{{date | armenianDate:'MM-DD-YY'}}</p> -->
+<!-- <div appRandomColor> click me</div>ewewewewwewe  -->
+<app-join></app-join>   

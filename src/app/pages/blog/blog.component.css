@@ -1,0 +1,131 @@
+.page6_section_flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 128px;
+}
+.page6_section2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+.page6_section2_title{
+font-family: Sen;
+font-size: 48px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: -2px;
+text-align: left;
+max-width: 670px;
+
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.container2{
+ 
+   max-width: 1280px;
+   margin: auto;
+  
+}
+.container3{
+    display: flex;
+    justify-content:space-between ;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    
+}
+.page6_section2_text{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 646px;
+    padding-top: 24px;
+    
+    }
+    .page6_section2_icons{
+    padding-top: 24px;
+    padding-bottom: 120px;
+    }
+    .page6_section_background{
+        background: #F4F0F8;
+
+    }
+    .page6_section_lines{
+        width: 813.69px;
+height: 24px;
+        background: #EDC14A;
+        position: relative;
+        top:0;
+
+    }
+    .page6_section_lines2{
+        width: 271.93px;
+        height: 24px;
+        
+        
+        background:#592EA9;
+        position: relative;
+        left: 800px;
+        top:24px
+
+    }
+.page6_section3_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+.page6_section3_head{
+font-family: Sen;
+font-size: 48px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: -2px;
+text-align: left;
+padding-top: 128px;
+
+}
+.page6_section3_title{
+font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 3px;
+text-align: left;
+color: #592EA9;
+}
+.page6_section3_text{
+font-family: Sen;
+font-size: 36px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -2px;
+text-align: left;
+padding-top: 20px;
+max-width: 561px;
+
+}
+.page6_section3_text2{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 16px;
+    max-width: 581px;
+    }
+
+.page6_section3_flex4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 128px;
+}

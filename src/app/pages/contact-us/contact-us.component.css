@@ -1,0 +1,141 @@
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.container2{
+ 
+   max-width: 1280px;
+   margin: auto;
+  
+}
+.container3{
+    display: flex;
+    justify-content:space-between ;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    
+}
+.page7_section_title{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 128px;
+    }
+    .page7_section_text{
+    font-family: Sen;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    text-align: center;
+    padding-top: 12px;
+    
+    }
+    .page7_section_text2{
+        padding-top: 24px;
+        padding-bottom: 64px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    max-width: 770px;
+    text-align: center;
+    
+    }
+    .page7_section2_background{
+        display: flex;
+        text-align: left;
+        background: #592EA9;
+        justify-content: space-between;
+        color: #F4F0F8;
+        font-family: Sen;
+        padding-top: 48px;
+        padding-left: 84px;
+        padding-right: 74px;
+        padding-bottom: 48px;
+    }
+    .page7_section2_title{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 60%;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    
+    
+    }
+    .page7_section2_text{
+        padding-top: 32px;
+        max-width: 170px;
+        line-height: 25px;
+    }
+    .page7_section2_text2{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 60%;
+    
+    }
+    .page7_forms{
+        padding-top: 32px;
+        
+    }
+    .page7_name_input{
+        width: 768px;
+        height: 76px;
+        padding: 24px;
+        border: 1px solid  #6D6E7680;
+        
+    }
+    .page7_email_input{
+        width: 768px;
+        height: 76px;
+        padding: 24px;
+        border: 1px solid  #6D6E7680;
+        margin-top: 16px;
+        
+    }
+    .page7_select{
+        width: 768px;
+        height: 76px;
+        padding: 24px;
+        border: 1px solid  #6D6E7680;
+        color: #6D6E76;
+        margin-top: 16px;
+    }
+    textarea{
+        margin-top: 16px;
+        width: 768px;
+        padding: 24px;
+        border: 1px solid  #6D6E7680;
+        height: 144px;
+    }
+    textarea::placeholder{
+        font-family: Inter;
+    }
+    
+    .page7_send_button{
+        width: 768px;
+        background: #EDC14A;
+        border: none;
+        padding: 16px;
+        font-family: Sen;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        cursor: pointer;
+        margin-top: 16px;
+        margin-bottom: 128px;
+    }

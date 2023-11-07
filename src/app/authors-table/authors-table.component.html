@@ -1,0 +1,141 @@
+<div style="display: block; position: fixed">
+  <button mat-button (click)="open()">Add new</button>
+</div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID. </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="image">
+    <th mat-header-cell *matHeaderCellDef> image </th>
+    <td mat-cell *matCellDef="let element"> <img [src]="element.image" style="width: 200px;"> </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+
+  <ng-container matColumnDef="short_description">
+    <th mat-header-cell *matHeaderCellDef> description </th>
+    <td mat-cell *matCellDef="let element"> {{element.short_description}} </td>
+  </ng-container>
+  <ng-container matColumnDef="facebook">
+    <th mat-header-cell *matHeaderCellDef> facebook </th>
+    <td mat-cell *matCellDef="let element">  <img [src]="element.facebook"> </td>
+  </ng-container>
+  <ng-container matColumnDef="twiter">
+    <th mat-header-cell *matHeaderCellDef> twiter </th>
+    <td mat-cell *matCellDef="let element"> <img [src]="element.twiter"></td>
+  </ng-container>
+  <ng-container matColumnDef="instagram">
+    <th mat-header-cell *matHeaderCellDef> instagram </th>
+    <td mat-cell *matCellDef="let element"> <img [src]="element.instagram"></td>
+  </ng-container>
+  <ng-container matColumnDef="in">
+      <th mat-header-cell *matHeaderCellDef> in </th>
+      <td mat-cell *matCellDef="let element"> <img [src]="element.in"></td>
+    </ng-container>
+
+  <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element"> <button (click)="delete(element.id)" mat-button>Delete</button>
+        <button (click)="edit(element,element.id)" mat-button>Edit</button></td>
+    </ng-container>
+    
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+  <div *ngIf="bool">
+    <form [formGroup]="form"  #addUser="ngForm" (ngSubmit)="onSubmit(addUser.value)">
+    <mat-icon (click)="close()" style="cursor: pointer; align-self: flex-end;">close</mat-icon>
+
+      <mat-form-field>
+        
+        <div class="mrg-top">
+          <mat-label for="image">
+            image
+          </mat-label>
+
+            <input type="text" matInput  formControlName="image" id="image">
+        </div>
+      </mat-form-field>
+      <mat-form-field>
+        <div>
+          <mat-label for="name">
+            name
+          </mat-label>
+
+            <input type="text" matInput  formControlName="name" id="name">
+        </div>
+      </mat-form-field>
+      <mat-form-field>
+
+        <div>
+          <mat-label for="short_description">
+          short_description
+        </mat-label>
+
+            <input type="text" matInput  formControlName="short_description" id="short_description">
+        </div>
+      </mat-form-field>
+      <mat-form-field>
+      
+        <div>
+          <mat-label for="facebook">
+            facebook
+         </mat-label>
+
+          <input type="text" matInput   formControlName="facebook" id="facebook">
+       </div>
+      </mat-form-field>
+      <mat-form-field>
+
+       <div>
+        <mat-label for="twiter">
+          twiter
+        </mat-label>
+
+          <input type="text" matInput  formControlName="twiter" id="twiter">
+      </div>
+    </mat-form-field>
+    <mat-form-field>
+
+      <div>
+        <mat-label for="instagram">
+          instagram
+        </mat-label>
+
+          <input type="text" matInput formControlName="instagram" id="instagram">
+      </div>
+    </mat-form-field>
+
+      <mat-form-field>
+      <div>
+        <mat-label for="in">
+          in
+        </mat-label>
+
+          <input type="text"matInput  formControlName="in" id="in">
+      </div>
+
+      </mat-form-field>
+        <button type="submit" mat-button >Save</button>
+      
+    </form>
+    
+    </div>
+      

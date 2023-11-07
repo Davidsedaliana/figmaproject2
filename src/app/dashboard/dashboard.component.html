@@ -1,0 +1,21 @@
+<div style="display: flex; justify-content: center;padding-top: 200px;">
+    <mat-card >
+        <mat-card-title>Allposts</mat-card-title>
+        <mat-card-content>{{this.data.length}} POSTS</mat-card-content>
+        <mat-card-actions [routerLink]="'/admin/allposts'">Edit </mat-card-actions>
+    </mat-card>
+    <mat-card >
+    <mat-card-title [routerLink]="">Authors</mat-card-title>
+
+        <mat-card-content>{{this.data2.length}} AUTHORS</mat-card-content>
+        <mat-card-actions [routerLink]="'/admin/authors'" routerLinkActive="active">Edit </mat-card-actions>
+
+    </mat-card>
+    <mat-card >
+        <mat-card-title>Category</mat-card-title>
+
+        <mat-card-content>{{this.data3.length}} CATEGORIES</mat-card-content>
+        <mat-card-actions [routerLink]="'/admin/category'" routerLinkActive="active">Edit </mat-card-actions>
+
+    </mat-card>
+</div>  

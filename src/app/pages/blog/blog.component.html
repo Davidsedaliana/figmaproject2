@@ -1,0 +1,38 @@
+<div class="page6_section_background">
+    <section class="container2" *ngFor="let item of filteredById">
+        <div class="page6_section_flex">
+
+        <div>
+            <img [src]="item.postUserImg" style="mix-blend-mode: multiply; width: 350px;">
+        </div>
+        <div class="page6_section2" >
+            <div class="page6_section2_title" >Hey there, I’m {{item.postUser}} and welcome to my Blog</div>
+            <div class="page6_section2_text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
+            <div class="page6_section2_icons" >
+                <a class="facebook"><img src="assets/images//4.png"></a>
+                <a class="twitter"><img src="assets/images//2.png"></a>
+                <a class="insta"><img src="assets/images//3.png"></a>
+                <a class="linkedIn"><img src="assets/images//1.png"></a>
+            </div>
+        </div>
+        </div>
+        <div class="page6_section_lines2"></div>
+        <div class="page6_section_lines"></div>
+    </section>
+</div>
+<div class="container2">
+    <section style="padding-bottom: 50px;">
+        <div  class="page6_section3_head">My Posts</div>
+        <div class="page6_section3_flex" *ngFor="let item of filteredById">
+            <img [src]="item.image">
+                <div class="page6_section3_flex2">
+                    <div  class="page6_section3_title">{{item.category}}</div>
+                    <div  class="page6_section3_text">{{item.title}}</div>
+                    <div  class="page6_section3_text2">{{item.short_description}}</div>
+                </div>
+            
+        </div>
+
+    </section>
+    
+</div>

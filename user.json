@@ -1,0 +1,198 @@
+{
+  "category": [
+    {
+      "image": "assets/images/icon.jpg",
+      "title": "Business",
+      "short_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "image": "assets/images/Icon.png",
+      "title": "Startup",
+      "short_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    {
+      "id": 3,
+      "image": "assets/images/economy.png",
+      "title": "Economy",
+      "short_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    {
+      "image": "assets/images/cyborg.png",
+      "title": "Technology",
+      "short_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "image": "assets/images/7.png",
+      "category": "startup",
+      "categoryimg": "assets/images/Icon.png",
+      "title": "Design tips for designers that cover everything you need",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Floyd Miles",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.jpg"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/5.png",
+      "category": "technology",
+      "categoryimg": "assets/images/cyborg.png",
+      "title": "How to build rapport with your web design clients",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Dianne Russell",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.jpg"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/photo-of-people-walking-on-hallway-3182811.png",
+      "category": "business",
+      "categoryimg": "assets/images/icon.jpg",
+      "title": "How to build rapport with your web design clients",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Jenny Wilson",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/images/fashion-woman-cute-shoes-5704849.jpg"
+    },
+    {
+      "id": 4,
+      "image": "assets/images/two-women-in-front-of-dry-erase-board-1181533.png",
+      "category": "startup",
+      "categoryimg": "assets/images/Icon.png",
+      "title": "Logo design trends to avoid in 2022",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Leslie Alexander",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.jpg"
+    },
+    {
+      "id": 5,
+      "image": "assets/images/7.png",
+      "category": "technology",
+      "categoryimg": "assets/images/cyborg.png",
+      "title": "8 Figma design systems you can download for free today",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Leslie Alexander",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/img/authors_imgs/author_logo_4.png"
+    },
+    {
+      "id": 6,
+      "image": "assets/images/7.png",
+      "category": "startup",
+      "categoryimg": "assets/images/Icon.png",
+      "title": "Font sizes in UI design: The complete guide to follow",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Guy Hawkins",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/img/authors_imgs/author_logo_5.png"
+    },
+    {
+      "id": 7,
+      "image": "assets/images/7.png",
+      "category": "startup",
+      "categoryimg": "assets/images/Icon.png",
+      "title": "Font sizes in UI design: The complete guide to follow",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Eleanor Pena",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/img/authors_imgs/author_logo_6.png"
+    },
+    {
+      "id": 8,
+      "image": "assets/images/7.png",
+      "category": "startup",
+      "categoryimg": "assets/images/Icon.png",
+      "title": "Font sizes in UI design: The complete guide to follow",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Jacob Jones",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/img/authors_imgs/author_logo_8.png"
+    },
+    {
+      "id": 9,
+      "image": "assets/images/7.png",
+      "category": "economy",
+      "categoryimg": "assets/images/economy.png",
+      "title": "Font sizes in UI design: The complete guide to follow",
+      "short_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "postUser": "Jacob Jones",
+      "postData": "May 23, 2022",
+      "postUserImg": "assets/img/authors_imgs/author_logo_8.png"
+    }
+  ],
+  "usersInfo": [
+    {
+      "id": 1,
+      "image": "assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.jpg",
+      "fullImage": "assets/img/authors_imgs/author_1.png",
+      "name": "Floyd Miles",
+      "short_description": "Content Writer @Company",
+      "facebook": "assets/images/luxa.org-hue-changed-4.png",
+      "twiter": "assets/images/luxa.org-hue-changed-2.png",
+      "instagram": "assets/images/luxa.org-hue-changed-3.png",
+      "in": "assets/images/luxa.org-hue-changed-1.png"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.jpg",
+      "fullImage": "assets/img/authors_imgs/author_2.png",
+      "name": "Dianne Russell",
+      "short_description": "Content Writer @Company",
+      "facebook": "assets/images/luxa.org-hue-changed-4.png",
+      "twiter": "assets/images/luxa.org-hue-changed-2.png",
+      "instagram": "assets/images/luxa.org-hue-changed-3.png",
+      "in": "assets/images/luxa.org-hue-changed-1.png"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/fashion-woman-cute-shoes-5704849.jpg",
+      "fullImage": "assets/img/authors_imgs/author_3.png",
+      "name": "Jenny Wilson",
+      "short_description": "Content Writer @Company",
+      "facebook": "assets/images/luxa.org-hue-changed-4.png",
+      "twiter": "assets/images/luxa.org-hue-changed-2.png",
+      "instagram": "assets/images/luxa.org-hue-changed-3.png",
+      "in": "assets/images/luxa.org-hue-changed-1.png"
+    },
+    {
+      "id": 4,
+      "image": "assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.jpg",
+      "fullImage": "assets/img/authors_imgs/author_4.png",
+      "name": "Leslie Alexander",
+      "short_description": "Content Writer @Company",
+      "facebook": "assets/images/luxa.org-hue-changed-4.png",
+      "twiter": "assets/images/luxa.org-hue-changed-2.png",
+      "instagram": "assets/images/luxa.org-hue-changed-3.png",
+      "in": "assets/images/luxa.org-hue-changed-1.png"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "image": "assets/images/Logo 1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/Logo 2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/Logo 3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "assets/images/Logo 4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "assets/images/Logo 5.jpg"
+    }
+  ],
+  "contactUs": []
+}

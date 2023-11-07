@@ -1,0 +1,16 @@
+<div>
+    <a [routerLink]="['/categories/', item.title.toLowerCase()]" routerLinkActive="active">
+        <div class="section3_article">
+            <div class="section3_icon">
+                <img [src]="item.image" alt="Image" style="mix-blend-mode: multiply;">
+            </div>
+            <div class="section3_text">
+                {{item.title}}
+            </div>
+            <div class="section3_text2">
+                {{item.short_description}}
+            </div>
+        </div>
+    </a>
+</div>
+

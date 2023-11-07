@@ -1,0 +1,45 @@
+<div class="container2" style="display: flex; justify-content: center; text-align: center;">
+    <section>
+        <div class="page7_section_title">
+            Contact us
+        </div>
+        <div class="page7_section_text">
+            Let’s Start a Conversation
+        </div>
+        <div class="page7_section_text2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim.
+        </div>
+        <div class="page7_section2_background">
+            <div>
+                <div class="page7_section2_title">Working hours</div>
+                <div class="page7_section2_text">
+                    Monday To Friday
+                    9:00 AM to 8:00 PM 
+                </div>
+                <div class="page7_section2_text2">Our Support Team is available 24/7</div>
+            </div>
+            <div>
+                <div class="page7_section2_title">Contact Us</div>
+                <div  class="page7_section2_text">020 7993 2905</div>
+                <div class="page7_section2_text2">hello@finsweet.com</div>
+            </div>
+    
+        </div>
+        <div class="page7_forms">
+            <form [formGroup]="form"  #addContact="ngForm" (ngSubmit)="onSubmit(addContact.value)">
+            <div><input type="text" name="fname" formControlName="fname" placeholder="Full Name" class="page7_name_input"></div>
+            <div><input type="email" name="mail" formControlName="mail" placeholder="Your Email" class="page7_email_input"></div>
+            <div>
+                <select class="page7_select" formControlName="select" name="select" id="select">
+                    <option >Query Related</option>
+                    <option>Feedback</option>
+                </select>
+            </div>
+            <div><textarea placeholder="Message" formControlName="message"></textarea></div>
+            <div><button type="submit" class="page7_send_button" [disabled]="form.invalid">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+</div>

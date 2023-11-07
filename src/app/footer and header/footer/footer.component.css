@@ -1,0 +1,144 @@
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 61px;
+    padding-bottom: 55px;
+}
+*{
+}
+.footer_background{
+    display: flex;
+    border: 1px solid #4C4C4C;
+    background: #2E3040 ;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    max-width: 1280px;
+    margin: auto;
+}
+.footer_background_text{
+ max-width: 562px;
+font-family: Sen;
+font-size: 36px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -2px;
+text-align: left;
+
+}
+footer{
+    background-color: #232536;
+    color: white;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 80px;
+
+}
+
+.footer_background_flex2{
+    display: flex;
+  
+}
+.footer_input{
+    border: 1px solid #4C4C4C;
+    background: #4c4c4c8a;
+    width: 323px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    color: white;
+    font-family: Inter;
+
+}
+.footer_input::placeholder{
+
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.nav2{
+    display: flex;
+    
+      font-family: 'Sen';
+      font-size: 16px;
+}
+
+
+a{
+    color: white;
+}
+
+.facebook{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.twitter{
+    margin-right: 16px;
+    cursor: pointer;
+
+    
+}
+.insta{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.linkedIn{
+    cursor: pointer;
+
+}
+.nav3{
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    
+    }
+.footer_button{
+    width: Hug (179px);
+    cursor: pointer;
+top: 228px;
+left: 1117px;
+padding: 16px 48px 16px 48px;
+gap: 12px;
+background: #FFD050;   
+color: white;
+font-family: Inter;
+
+}
+.footer_last_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_mrg{
+    margin-left: 24px;
+}
+.footer_lst_text{
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+color: #7c7c7c;
+max-width: 352px;
+padding-top: 48px;
+}
+.footer_last_images{
+    padding-top: 60px;
+}

@@ -1,0 +1,254 @@
+        <main class="main_background">
+            <div class="container">
+
+           
+        
+                <div class="main_text1">
+                    POSTED ON <b>STARTUP </b>
+                </div>
+                <div class="main_text3">
+                    Step-by-step guide to choosing great font pairs
+                </div>
+                <div class="main_text4">
+                    By <a  class="main_a_color">James West</a> |  May 23, 2022 
+                </div>
+                <div class="main_text5">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident.
+                </div>
+                <a class="main_button"[routerLink]="'startup/step-by'" routerLinkActive="active">
+                    Read More >
+                </a>
+            </div>
+        </main>
+    
+    
+    <div class="container">
+
+   
+        <section class="section_background">
+            <aside class="aside_flex">
+                Featured Post
+                <div class="aside_image">
+                    <img src="assets/images//white-concrete-building-1838640.jpg">
+                </div>
+                <div class="aside_text2">
+                    By John Doe   l   May 23, 2022
+                </div>
+                <div class="aside_text3">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor.
+                </div>
+                <div class="aside_text4">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident.
+                </div>
+                <a [routerLink]="'startup/step-by'" class="aside_button">
+                    Read More >
+                </a>
+            </aside>
+            <aside class="aside2_flex">
+                <div class="aside2_text_flex">
+
+                <div>All Posts</div> 
+                <a [routerLink]="'startup'" routerLinkActive="active" class="aside2_a">
+                    View All</a>
+                </div>
+                <div class="aside2_article" *ngFor="let item of data2">
+                    <a [routerLink]="'startup'" routerLinkActive="active">
+                    <div class="aside2_text">
+                       By{{item.postUser}} | {{item.postData}}
+                    </div>
+                    <div class="aside_2_text2">
+                        {{item.title}}
+                    </div>
+                     </a>
+                </div>
+            </aside>
+            
+        </section>
+    </div>
+
+    <div class="container">
+
+   
+        <div class="section2_lines">
+            
+            <div class="section2_line_yellow">
+
+            </div>
+            <div class="section2_line_purple">
+
+            </div>
+        </div>
+
+        <section class="section2_background">
+
+        
+            <div class="section_2_article_flex">
+                <div class="section2_text">
+                    ABOUT US
+                </div>
+                <div class="section2_text2">
+                    We are a community of content writers who share their learnings
+                </div>
+                <div class="section2_text3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <a [routerLink]="'about-us'" class="section2_button">
+                    Read More >
+                </a>
+            </div>
+            <div class="section_2_article_flex">
+                <div class="section2_text">
+                    Our mision
+                </div>
+                <div class="section2_text2">
+                    Creating valuable content for creatives
+                    all around the world
+                </div>
+                <div class="section2_text3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            
+        </section>
+    </div>
+        <div class="container">
+
+       
+            <div class="section_title">
+                Choose A Category
+            </div>
+            <div class="container3">
+
+            <app-navbar *ngFor="let items of data" [item]="items"></app-navbar>
+        </div>
+        
+    </div>
+    <section class="section3_background container2">
+
+    </section>
+        <section class="section4">
+        <div class="section4_background">
+
+   
+        <aside class="aside3_flex">
+            <div class="aside3_text">
+                Why we started 
+            </div>
+            <div class="aside3_text2" >
+                It started out as a simple idea and evolved into our passion
+            </div>
+            <div  class="aside3_text3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            </div>
+            <a [routerLink]="'about-us'" routerLinkActive="active" class="aside3_button main_button">
+                Discover our story >
+            </a>
+        </aside>
+     </div>
+
+    </section>
+    <span class="section5_span">List of Authors</span>
+
+    <div class="container3  container">
+        <div *ngFor="let item of data4">
+            <a [routerLink]="['blog',item.id]">
+                <section class="section5">
+                    <div class="section5_author">
+                        <div class="section5_author_icon">
+                            <img [src]="item.image" class="section5_img">
+                        </div>
+                        <div class="section5_author_name">
+                           {{item.name}}
+                        </div>
+                        <div class="section5_author_text">
+                           {{item.short_description}}
+                        </div>
+                        <div class="section5_author_media">
+                            <a class="facebook"><img [src]="item.facebook"></a>
+                            <a class="twitter"><img [src]="item.twiter"></a>
+                            <a class="insta"><img  [src]="item.instagram"></a>
+                            <a class="linkedIn"><img  [src]="item.in"></a>
+                        </div>
+                    </div>
+                </section>
+                </a>
+        </div>
+       
+
+        </div>
+        <div class="container">
+
+            <aside class="aside4_flex">
+                <div>
+                    <div class="aside4_text">
+                        We are
+                    </div>
+                    <div class="aside4_text2">
+                        Featured in
+                    </div>
+                </div>
+                <div *ngFor="let item of data3">
+                    <img [src]="item.image" class="aside4_logo" >
+
+                </div>
+                 
+             
+               
+        </aside>
+    </div>
+        <div class="container">
+            <section class="section6">
+                <div class="section6_block1">
+                    <div class="section6_block1_title">
+                        TESTIMONIALS
+                    </div>
+                    <div  class="section6_block1_text">
+                        What people say about our blog
+                    </div>
+                    <div class="section6_block1_text2">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+                <div class="section6_block2">
+                    <div class="section6_block2_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed 
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                    </div>
+                    <div class="section6_block2_flex">
+                        <div ><img src="assets/images//Profile picture.jpg" class="section6_block2_image"></div> 
+                        <div>
+                            <div class="section6_block2_text2">
+                            
+                                Jonathan Vallem
+                            
+                            </div>
+                            
+                            <div class="section6_block2_text3">
+                                New york, USA
+                            </div>
+                        </div>
+                        <div class="section_6_block2_arrows section_6_transform_arrow ">
+                            <img src="assets/images/Arrow 1-1.png" class="section_6_arrow_image_transform ">
+                        </div> 
+                        <div class="section_6_block2_arrows2 section_6_transform_arrow" >
+                            <img src="assets/images//Arrow 1-1.png" class="section_6_arrow_image_transform">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <app-join></app-join>

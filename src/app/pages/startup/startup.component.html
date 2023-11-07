@@ -1,0 +1,46 @@
+<div class="container3 page2_main_background">
+    <div class="container">
+        <div class="page2_text1">Featured Post</div>
+        <div class="page2_title">Step-by-step guide to choosing great font pairs</div>
+        <div class="page2_text2">By John Doe   l   May 23, 2022 </div>
+        <div class="page2_text3">Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident. </div>
+        <div class="page2_button"><a [routerLink]="'step-by'" routerLinkActive="active">Read More ></a></div>
+    </div>
+    <div><img src="assets/images//man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png"></div>
+</div>
+<section class="container">
+    <div class="page2_section_flex3">
+        All posts
+    </div>
+    <div class="container page2_section_flex" >
+        <div class="page2_section_flex2" *ngFor="let item of data2" [routerLink]="['/categories',item.category]" style="cursor: pointer;">
+         
+                <div>
+                    <img [src]="item.image">
+                </div>
+                <div class="page2_section_flex3">
+                    <div class="page2_section_text">{{item.category}}</div>
+                    <div class="page2_section_title">{{item.title}}</div>
+                    <div class="page2_section_text2">{{item.short_description}}</div>
+                </div>
+            
+        </div>
+        <div style="display: flex; align-self: center;"> <a class="page2_prev" (click)="back()" *ngIf="bool2" style="cursor: pointer;">< Prev</a><a   class="page2_next" style="cursor: pointer;" *ngIf="bool" (click)="next()" > Next ></a> </div>
+     
+
+    </div>
+</section>
+<div class="container">
+
+       
+    <div class="section_title">
+        All Categoties
+    </div>
+    <section class="section3_background">
+        <app-navbar *ngFor="let items of data" [item]="items"></app-navbar>
+    </section>
+</div>
+<app-join></app-join>
+    

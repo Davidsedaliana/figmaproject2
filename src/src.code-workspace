@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.angular"
+		},
+		{
+			"path": "../.vscode"
+		},
+		{
+			"path": "../dist"
+		},
+		{
+			"path": "../figmaproject"
+		},
+		{
+			"path": "../node_modules"
+		}
+	]
+}

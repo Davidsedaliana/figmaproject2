@@ -1,0 +1,55 @@
+<footer>
+    <div class="container">
+            <div class="footer_flex">
+                <div class="nav2">
+                    <div>
+                        <img src="assets/images/Logo.png" [routerLink]="'/'" style="cursor: pointer;">
+
+                    </div>
+                </div>
+                    <div class="nav3">
+                         <div><a [routerLink]="'/'" routerLinkActive="active">Home</a></div>  
+                        <div class="footer_mrg"><a [routerLink]="'startup'" routerLinkActive="active">Blog</a></div>
+                        <div class="footer_mrg"><a [routerLink]="'about-us'" routerLinkActive="active">About us</a></div>
+                          <div class="footer_mrg"><a [routerLink]="'contact-us'" routerLinkActive="active">Contact us</a></div>
+                           <div  class="footer_mrg"><a [routerLink]="'privacy-policy'" routerLinkActive="active">Privacy policy</a></div>
+                    </div>
+                      
+                
+            </div>
+                <div class="footer_background">
+                    <div class="footer_background_text">
+                        Subscribe to our news letter to get latest updates and news
+                    </div>
+                    <form [formGroup]="form" (ngSubmit)="top()">
+
+                        <div class="footer_background_flex2">
+                            <div style="max-width: 322px;">
+                            
+                                    <input type="email" name="email" formControlName="email" placeholder="Enter Your Email" class="footer_input">
+
+                            
+                            </div>
+                            <button type="submit" [disabled]="form.invalid" class="footer_button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                      
+                </div>
+                <div class="footer_last_flex">
+                    <div class="footer_lst_text">
+                        Finstreet 118 2561 Fintown
+                        Hello@finsweet.com  020 7993 2905  
+                    </div>
+                    <div class="footer_last_images">
+                        <a class="facebook" href="https://www.facebook.com/"><img src="assets/images/luxa.org-hue-changed-4.png"></a>
+                        <a class="twitter" href="https://twitter.com/?lang=ru"><img src="assets/images/luxa.org-hue-changed-2.png"></a>
+                        <a class="insta" href="https://www.instagram.com/"><img src="assets/images/luxa.org-hue-changed-3.png"></a>
+                        <a class="linkedIn" href="https://www.linkedin.com/"><img src="assets/images/luxa.org-hue-changed-1.png"></a>
+                    </div>
+               
+                </div>
+          
+    </div>
+</footer>

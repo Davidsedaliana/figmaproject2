@@ -1,0 +1,79 @@
+<section class="page5_section">
+
+    <div  class="page5_section_title">
+        {{this.selectedCategory}}
+    </div>
+    <div class="page5_section_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+    </div>
+    <div class="page5_section_text2">
+        Blog >   {{this.selectedCategory}}
+    </div>
+
+
+</section>
+<div class="container2">
+    <section class="page5_section2_flex">
+        <div class="page5_section2_column">
+            <div class="page5_section2_wrap" *ngFor="let item of filteredPosts">
+                <div>
+                    <img [src]="item.image">
+                </div>
+                <div class="page5_section2_block">
+                    <div  class="page5_section2_title" >
+                        {{item.category}}
+                    </div>
+                    <div class="page5_section2_text">
+                        {{item.title}}
+                    </div>
+                    <div class="page5_section2_text2">
+                        {{item.short_description}}
+                    </div>
+                </div>
+            </div>
+           
+            
+            
+            </div>
+     
+    
+        <aside class="page5_aside_flex">
+            <div class="page5_aside_title">
+                Categories
+            </div>
+            <div  class="page5_aside_block" *ngFor="let item of data2" [routerLinkActive]="['color']">
+                <a [routerLink]="['//categories/', item.title.toLowerCase()]"  >
+                <div  class="page5_aside_icon_block">
+                    <img [src]="item.image">
+                </div>
+                <div  class="page5_aside_text">
+                    {{item.title}}
+
+                </div>
+                </a>
+            </div>
+            
+           
+          
+            <div class="page5_aside_title2">
+                All Tags
+            </div>
+            <div>
+
+            
+                <div class="page5_aside2_flex" >
+                    <div class="page5_aside2_text border" >Business</div>
+                    <div class="page5_aside2_text border2">Experience</div>
+                </div>
+                <div  class="page5_aside2_flex">
+                    <div class="page5_aside2_text border3">Screen</div>
+                    <div class="page5_aside2_text border4">Technology</div>
+                </div>
+                <div  class="page5_aside2_flex">
+                    <div class="page5_aside2_text border5">Marketing</div>
+                    <div class="page5_aside2_text border6">Life</div>
+                </div>
+            </div>
+        </aside>
+    </section>
+</div>  

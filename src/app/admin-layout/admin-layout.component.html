@@ -1,0 +1,34 @@
+<div class="header" style="display: flex; justify-content: space-between;">
+    <div class="container3">
+    
+    <div class="logo_image" style="display: flex;">
+        <div>
+            <img src="assets/images/Logo.png" [routerLink]="'/'" style="cursor: pointer;">
+            <div style="align-self: center; margin-left: 10px;">ADMIN PANEL</div>
+        </div>
+    
+    </div>
+</div>
+<div>
+    <button mat-raised-button (click)="logout()">LogOut</button>
+</div>
+</div>  
+
+
+
+<mat-drawer-container style="height: 91%;">
+    <mat-drawer mode="side" opened class="layout_routers">  
+    <div class="admin_layout_flex">
+        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px; width: 200px;color:black;"  [routerLink]="'dashboard'" routerLinkActive="active" >DashBoard</button>
+        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="'category'" routerLinkActive="active" >Category</button>
+        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="'authors'" routerLinkActive="active" >Authors</button>
+        <button mat-raised-button style="text-transform: uppercase;margin-top: 20px; height: 50px; width: 200px;color:black;"  [routerLink]="'allposts'" routerLinkActive="active" >All Posts</button>
+        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px;height: 50px; width: 200px;color:black;"  [routerLink]="'contactUsTable'" routerLinkActive="active" >Contact Us</button>
+        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="''" routerLinkActive="active" >Home</button>
+
+    </div> 
+    </mat-drawer>
+    <mat-drawer-content>  
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
