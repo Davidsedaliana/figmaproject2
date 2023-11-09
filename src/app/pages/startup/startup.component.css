@@ -235,3 +235,30 @@ display: block;
     color:#232536;
     transform: scale(1.3);
 }
+@media screen and (max-width:750px) {
+    .container3{
+        flex-direction: column;
+        align-items: flex-start ;
+    }
+    .page2_section_flex2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .page2_section_flex3{
+        text-align: center;
+    }
+    .section3_background{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_title{
+        text-align: center;
+    }
+  
+    .page2_image{
+        max-width: 320px;
+    }
+    .page2_images{
+        width: 320px;
+    }
+}

@@ -18,15 +18,19 @@
 
 <mat-drawer-container style="height: 91%;">
     <mat-drawer mode="side" opened class="layout_routers">  
+<mat-button-toggle-group>
+          
     <div class="admin_layout_flex">
-        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px; width: 200px;color:black;"  [routerLink]="'dashboard'" routerLinkActive="active" >DashBoard</button>
-        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="'category'" routerLinkActive="active" >Category</button>
-        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="'authors'" routerLinkActive="active" >Authors</button>
-        <button mat-raised-button style="text-transform: uppercase;margin-top: 20px; height: 50px; width: 200px;color:black;"  [routerLink]="'allposts'" routerLinkActive="active" >All Posts</button>
-        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px;height: 50px; width: 200px;color:black;"  [routerLink]="'contactUsTable'" routerLinkActive="active" >Contact Us</button>
-        <button mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="''" routerLinkActive="active" >Home</button>
+        <mat-button-toggle mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px; width: 200px;color:black;" [routerLink]="'dashboard'" routerLinkActive="active" >DashBoard</mat-button-toggle>
+        <mat-button-toggle mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="'category'" routerLinkActive="active" >Category</mat-button-toggle>
+        <mat-button-toggle mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="'authors'" routerLinkActive="active" >Authors</mat-button-toggle>
+        <mat-button-toggle mat-raised-button style="text-transform: uppercase;margin-top: 20px; height: 50px; width: 200px;color:black;"  [routerLink]="'allposts'" routerLinkActive="active" >All Posts</mat-button-toggle>
+        <mat-button-toggle mat-raised-button style="text-transform: uppercase; margin-top: 20px;height: 50px; width: 200px;color:black;"  [routerLink]="'contactUsTable'" routerLinkActive="active" >Contact Us</mat-button-toggle>
+        <mat-button-toggle mat-raised-button style="text-transform: uppercase; margin-top: 20px; height: 50px;width: 200px;color:black;"  [routerLink]="''" routerLinkActive="active" >Home</mat-button-toggle>
 
     </div> 
+</mat-button-toggle-group>
+
     </mat-drawer>
     <mat-drawer-content>  
         <router-outlet></router-outlet>

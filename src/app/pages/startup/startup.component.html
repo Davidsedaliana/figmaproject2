@@ -6,19 +6,19 @@
         <div class="page2_text3">Duis aute irure dolor in reprehenderit in voluptate velit esse 
             cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident. </div>
-        <div class="page2_button"><a [routerLink]="'step-by'" routerLinkActive="active">Read More ></a></div>
+        <div class="page2_button"><a [routerLink]="'step-by/1'" routerLinkActive="active">Read More ></a></div>
     </div>
-    <div><img src="assets/images//man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png"></div>
+    <div><img class="page2_image" src="assets/images//man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png"></div>
 </div>
 <section class="container">
     <div class="page2_section_flex3">
         All posts
     </div>
     <div class="container page2_section_flex" >
-        <div class="page2_section_flex2" *ngFor="let item of data2" [routerLink]="['/categories',item.category]" style="cursor: pointer;">
+        <div class="page2_section_flex2" *ngFor="let item of data2" [routerLink]="['/startup/step-by/',item.id]" style="cursor: pointer;">
          
                 <div>
-                    <img [src]="item.image">
+                    <img [src]="item.image" class="page2_images">
                 </div>
                 <div class="page2_section_flex3">
                     <div class="page2_section_text">{{item.category}}</div>

@@ -1,27 +1,5 @@
-<div class="container3 page3_main_background" *ngIf="bool">
-    <div class="container page3_section">
-        <div class="page3_text1"> 
-        <div class="page3_picture">
-            <img src="assets/images/Profile picture.jpg" >
-        </div>
-            <div>
-                <div class="page3_text2">
-                    Andrew Jonson
-                     </div>
-                     <div class="page3_text3">
-                        Posted on 27th January 2022
-                     </div>
-            </div>
-          
-        </div>
-        <div class="page3_title">Step-by-step guide to choosing great font pairs</div>
-        <div class="page3_text4"><img src="assets/images//Icon.png" >Startup</div>
 
-  
-
-    </div>
-</div>
-<div *ngIf="bool2"  class="container3 page3_main_background">
+<div   class="container3 page3_main_background">
     <div class="container page3_section" *ngFor="let item of filteredById">
         <div class="page3_text1"> 
         <div class="page3_picture">
@@ -44,7 +22,7 @@
 
     </div>
 </div>
-<div class="page3_image" *ngIf="bool"><img src="assets/images//photo-of-woman-wearing-eyeglasses-3184405.png"></div>
+<div class="page3_image" *ngIf="bool"><img src="assets/images//photo-of-woman-wearing-eyeglasses-3184405.png" class="page3_image"></div>
 <div class="page3_image" *ngIf="bool2"><img *ngFor="let item of filteredById" [src]="item.image" style="width: 900px;"></div>
 <div class="container3">
     <section class="page3_section">
@@ -98,7 +76,7 @@
                 <a *ngFor="let item of data" [routerLink]="['/startup/step-by/',item.id]" (click)="closepage()">
                 <div class="page3_section2_flex2" >
                     <div class="page3_section2_image">
-                        <img [src]="item.image">
+                        <img [src]="item.image" class="page3_sec_image">
                     </div>
                     <div class="page3_section_flex3">
                         <div class="page3_section2_text2">By<span class="page3_span"> {{item.postUser}}</span>   l   Aug 23, 2021 </div>

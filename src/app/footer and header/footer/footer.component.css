@@ -110,14 +110,9 @@ a{
     
     }
 .footer_button{
-    width: Hug (179px);
-    cursor: pointer;
-top: 228px;
-left: 1117px;
 padding: 16px 48px 16px 48px;
 gap: 12px;
 background: #FFD050;   
-color: white;
 font-family: Inter;
 
 }
@@ -141,4 +136,34 @@ padding-top: 48px;
 }
 .footer_last_images{
     padding-top: 60px;
+}
+@media screen and (max-width:810px) {
+    .footer_background{
+        flex-direction: column;
+        max-width: 600px;
+    }
+    .footer_input{
+        max-width: 320px;
+        width: unset;
+        padding-left: unset;
+    }
+    .footer_button{
+        padding: unset;
+    }
+}
+@media screen and (max-width:560px) {
+    .footer_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_mrg{
+        margin: unset;
+    }
+    .footer_background_text{
+        font-size: 28px;
+    }
 }

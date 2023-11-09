@@ -30,7 +30,7 @@
 
                             
                             </div>
-                            <button type="submit" [disabled]="form.invalid" class="footer_button">
+                            <button type="submit" [ngStyle]="this.form.valid ? {color:'white'}:null" [disabled]="form.invalid" class="footer_button">
                                 Subscribe
                             </button>
                         </div>
@@ -40,7 +40,7 @@
                 <div class="footer_last_flex">
                     <div class="footer_lst_text">
                         Finstreet 118 2561 Fintown
-                        Hello@finsweet.com  020 7993 2905  
+                        Hello&#64;finsweet.com  020 7993 2905  
                     </div>
                     <div class="footer_last_images">
                         <a class="facebook" href="https://www.facebook.com/"><img src="assets/images/luxa.org-hue-changed-4.png"></a>

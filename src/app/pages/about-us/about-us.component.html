@@ -85,14 +85,14 @@
         </div>
         <div class="page4_section4_img">
             <div class="page4_figure"></div>
-            <img src="assets/images//ground-group-growth-hands-461049.png">
+            <img src="assets/images//ground-group-growth-hands-461049.png" class="page4_section4_img">
         </div>
         
     </div>
     <div class="page4_section5_flex">
 
         <div class="page4_section5_img">
-            <img src="assets/images//three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.png">
+            <img src="assets/images//three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.png" class="page4_section4_img">
         </div>
         <div class="page4_section5_block">
             <div class="page4_section4_title"> Our team of creatives</div>
@@ -110,7 +110,7 @@
     <div class="container">  <span class="section5_span">List of Authors</span>
         <div class=" section5">
 
-         <div *ngFor="let item of usersInfo" >
+         <div *ngFor="let item of usersInfo">
             
         <a [routerLink]="['blog/',item.id]" routerLinkActive="active">
             <section class="page4_section6">
@@ -164,6 +164,4 @@
  
 
 </div>
-<!-- <p>{{date | armenianDate:'MM-DD-YY'}}</p> -->
-<!-- <div appRandomColor> click me</div>ewewewewwewe  -->
 <app-join></app-join>   

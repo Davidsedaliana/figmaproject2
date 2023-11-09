@@ -11,13 +11,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { authors } from '../models/authors';
 import { NavBar } from '../models/navbar_interface';
-
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 
 @Component({
   standalone:true,
-  imports:[CommonModule,RouterModule,MatButtonModule,MatTableModule,MatSidenavModule,MatCardModule,MatIconModule],
+  imports:[CommonModule,RouterModule,MatButtonModule,MatTableModule,MatSidenavModule,MatCardModule,MatIconModule,MatButtonToggleModule],
   selector: 'app-admin-layout', 
   templateUrl: './admin-layout.component.html',
   styleUrls: ['./admin-layout.component.css']
@@ -32,4 +32,7 @@ logout(){
     this.route.navigate(['auth'])
   }
 }
+
+toggle:boolean=true;
+
 }

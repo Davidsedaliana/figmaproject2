@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RequestServiceService } from 'src/services/request-service.service';
-import { contactUs } from 'src/app/models/contactUS';
-import { environment } from 'src/environment/environment.prod';
+import { contactUs } from '../../../app/models/contactUS';
+import { environment } from '../../../environment/environment.prod';
 @Component({
   standalone:true,
   imports:[CommonModule,RouterLink,RouterModule,RouterOutlet,ReactiveFormsModule],
@@ -13,7 +13,7 @@ import { environment } from 'src/environment/environment.prod';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent  implements OnInit{
-  constructor(public fb:FormBuilder,private requestService:RequestServiceService){
+  constructor(private fb:FormBuilder,private requestService:RequestServiceService){
 
   }
   onSubmit(data:string){
@@ -22,7 +22,6 @@ export class ContactUsComponent  implements OnInit{
     this.form.setValue({
       fname:'',
       mail:'',
-      select:'',
       message:'',
       
     })
@@ -30,13 +29,15 @@ export class ContactUsComponent  implements OnInit{
   } 
   
   form!:FormGroup
+  unamePattern = `^[a-zA-Z0-9]*[a-zA-Z]+[a-zA-Z0-9]*$`;
   ngOnInit(): void {
     this.form=this.fb.group({
-      fname:['',Validators.required,Validators.pattern("/^[a-z ,.'-]+$/i")],
-      mail:['',Validators.required,Validators.pattern("/^[a-z ,.'-]+$/i")],
-      select:['',Validators.required,Validators.pattern("/^\S+@\S+\.\S+$/") ],
+      fname:['',[Validators.required,Validators.pattern(this.unamePattern)]],
+      mail:['',[Validators.required,Validators.email]],
+      select:['',Validators.required],
       message:['',Validators.required]
     })
-    
+      
   }
+
 }

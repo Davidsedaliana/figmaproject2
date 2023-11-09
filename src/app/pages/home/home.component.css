@@ -681,7 +681,7 @@ padding-top: 16px;
 .section7_button{
     display:flex;
     background: #FFD050;
-    width: 174px;
+   max-width: 174px;
     height: 56px;
     font-family: Sen;
 font-size: 18px;
@@ -694,3 +694,104 @@ color: black;
 margin-top: 32px;
 margin-bottom: 128px;
 }
+
+@media screen and (max-width:1200px) {
+
+    .section5_author{
+        width: unset;
+    }
+       }
+         
+       
+@media screen and (max-width:820px) {
+ .container3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section5_author{
+        margin-top: 10px;
+    }
+    .section5{
+        padding-bottom: 20px;
+        padding-top: 10px;
+
+    }
+    .aside4_flex{
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside4_logo{
+        padding-top: 10px;
+    }
+    .section6{
+        flex-direction: column;
+        align-items: center;
+     
+
+    }
+    .section6_block2{
+        border-left: unset;
+        border-top: 1px solid rgba(168, 166, 166, 0.555);
+        margin-top: 10px;
+        padding-left: unset;
+    }
+    .section6_block2_text{
+   max-width: 320px;
+    }
+    .section6_block1{
+    padding-bottom: 20px;
+    padding-left: unset;
+
+    }
+    .section_background{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside_image2{
+        max-width: 400px;
+    }
+    .aside_image{
+        max-width: 400px;
+    }
+  
+    .aside3_flex{
+        margin-top: unset;
+        max-height: unset;
+        padding: unset;
+    }
+    .section_6_block2_arrows{
+        margin-left: unset;
+        
+    }
+    .section6_block2_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_6_block2_arrows2{
+        margin-left: unset;
+        
+    }
+    }
+      
+    @media screen and (max-width:560px) {
+        .aside2_article{
+            padding: unset;
+        }
+        .aside_flex{
+            padding: unset;
+        }
+        .aside_image2{
+            max-width: 280px;
+        }
+        .aside_image{
+            max-width: 320px;
+        }
+        .section2_background{
+            flex-direction: column;
+        }
+    }

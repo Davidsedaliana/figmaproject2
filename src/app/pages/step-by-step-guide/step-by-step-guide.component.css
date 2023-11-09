@@ -169,3 +169,36 @@ padding-top: 64px;
 .page3_span{
     color:#592EA9
 }
+@media screen and (max-width:1420px) {
+    .page3_section2_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    *{
+        border: 1px solid;
+    }
+    .page3_image{
+        max-width: 906px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:910px) {
+
+    .page3_image{
+        max-width: 506px;
+        margin: auto;
+    }
+    .page3_sec_image{
+        width: 300px;
+    }
+}
+@media screen and (max-width:508px) {
+
+    .page3_image{
+        max-width: 320px;
+        margin: auto;
+    }
+    .page3_sec_image{
+        width: 250px;
+    }
+}

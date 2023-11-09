@@ -180,3 +180,10 @@ text-transform: uppercase;
 .table{
     width: 100%;
 }
+.class1{
+    background-color: #202cd8;
+    color: red;
+}
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard, .mat-button-toggle-group-appearance-standard{
+    border: 0px;
+}
