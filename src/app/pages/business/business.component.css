@@ -223,3 +223,27 @@ text-align: left;
     padding:8px 38px 8px 38px;
     margin-left: 16px;
 }
+@media screen and (max-width:980px) {
+    .page5_section2_wrap{
+        display: block;
+    }
+    .page5_section2_block[_ngcontent-ng-c3887693187]{
+        padding: unset;
+    }
+  
+}
+
+@media screen and (max-width:700px) {
+    .page5_section2_wrap{
+        display: block;
+    }
+    .page5_section2_block[_ngcontent-ng-c3887693187]{
+        padding: unset;
+    }
+    .page5_section2_flex{
+        flex-direction: column;
+    }
+    .page5_images_ng{
+        width: 300px;
+    }
+}

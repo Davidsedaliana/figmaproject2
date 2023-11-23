@@ -129,3 +129,47 @@ max-width: 561px;
     padding-top: 64px;
     padding-bottom: 128px;
 }
+
+.twitter{
+    margin-left: 10px;
+}
+.insta{
+    margin-left: 10px;
+}
+
+.linkedIn{
+    margin-left: 10px;
+}
+.page6_image_ng3{
+    mix-blend-mode: multiply; 
+    width: 350px;
+}
+@media screen and (max-width:1090px) {
+    .page6_section_lines2{
+        display: none;
+
+    }
+    .page6_section_lines{
+        display: none;
+        
+    }
+    .page6_section_flex{
+        flex-direction: column;
+    }
+    .page6_image_ng{
+        margin: auto;
+    }
+    .page6_section2{
+        align-items: center;
+        margin: unset;
+    }
+    .page6_section3_flex{
+        flex-direction: column;
+    }
+    .page6_image_ng3{
+        width: 300px;
+    }
+    .page6_image_ng2{
+        width: 300px;
+    }
+}

@@ -21,7 +21,7 @@ import { adminGuard } from './guards/admin.guard';
 import { ContactUsTableComponent } from './contact-us-table/contact-us-table.component';
 
 
-const routes: Route[] = [
+const routes: Route[] = [ 
 {
   path:'',
   component:LayoutComponent,

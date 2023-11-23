@@ -19,7 +19,7 @@ let ELEMENT_DATA: allposts[] = [
 
 @Component({
   standalone:true,
-  imports:[CommonModule,RouterModule,MatButtonModule,MatTableModule,MatSidenavModule,ReactiveFormsModule,MatInputModule,MatFormFieldModule,FormsModule,MatIconModule],
+  imports:[CommonModule,RouterModule,MatButtonModule,MatTableModule,MatSidenavModule,ReactiveFormsModule,MatInputModule,MatFormFieldModule,MatIconModule],
   selector: 'app-category-table',
   templateUrl: './category-table.component.html',
   styleUrls: ['./category-table.component.css']
