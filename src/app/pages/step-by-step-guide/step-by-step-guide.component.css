@@ -174,9 +174,7 @@ padding-top: 64px;
         flex-direction: column;
         align-items: center;
     }
-    *{
-        border: 1px solid;
-    }
+
     .page3_image{
         max-width: 906px;
         margin: auto;
