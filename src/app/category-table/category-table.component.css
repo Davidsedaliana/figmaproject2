@@ -4,7 +4,7 @@ form{
     display: flex;
     flex-direction: column;
     top:100px;
-    left:600px;
+    left: 35%;
     width: 700px;
     background-color: rgba(255, 255, 255, 0.397);
     font-size: 40px;
@@ -12,3 +12,8 @@ form{
     align-items: center;
 }
 
+
+.alert_flex{
+    display: flex;
+    justify-content: center;
+}

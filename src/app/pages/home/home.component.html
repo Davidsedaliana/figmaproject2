@@ -56,7 +56,7 @@
                     View All</a>
                 </div>
                 <div class="aside2_article" *ngFor="let item of data2">
-                    <a [routerLink]="'startup'" routerLinkActive="active">
+                    <a [routerLink]="['startup/step-by/',item.id]" routerLinkActive="active">
                     <div class="aside2_text">
                        By{{item.postUser}} | {{item.postData}}
                     </div>

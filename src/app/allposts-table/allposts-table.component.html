@@ -67,12 +67,12 @@
           <mat-label for="image">
             image
           </mat-label>
-
+<span *ngIf="form.get('in')?.hasError('required') && (form.get('in')?.dirty||form.get('in')?.touched )" style="color:red;">Введите изображение соц сети</span> 
             <input type="text" matInput  formControlName="image" id="image">
         </div>
       </mat-form-field>
       <mat-form-field>
-        <div>
+        <div> 
           <mat-label for="category">
             category
           </mat-label>

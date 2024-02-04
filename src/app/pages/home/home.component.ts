@@ -23,6 +23,9 @@ export class HomeComponent implements OnInit {
   data2:allposts[]=[]
   data3:images[]=[]
   data4:authors[]=[]
+  getId:authors[]=[]
+selectedId:string=''
+filteredById:allposts[]=[]
   constructor(private requestService:RequestServiceService,private route:ActivatedRoute){
 
   }
@@ -44,6 +47,12 @@ export class HomeComponent implements OnInit {
       this.data4=user4
 
     });
+    this.route.params.subscribe(getId=>{
+      this.selectedId=getId['id']
+      this.requestService.getData<allposts[]>(`${environment.posts.get}?id=${this.selectedId}`).subscribe(data2=>{
+        this.filteredById=data2
+      })
+    })
   }
   
 }

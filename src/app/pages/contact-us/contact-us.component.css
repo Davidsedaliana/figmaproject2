@@ -65,7 +65,7 @@
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-    opacity: 60%;
+    color:rgba(240, 244, 255, 0.4);
     letter-spacing: 0px;
     text-align: left;
     color: #FFFFFF;
@@ -84,7 +84,7 @@
     line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
-    opacity: 60%;
+    color:rgba(240, 244, 255, 0.4);
     
     }
     .page7_forms{

@@ -71,6 +71,7 @@
           </mat-label>
 
             <input type="text" matInput  formControlName="image" id="image">
+            <span *ngIf="form.get('image')?.hasError('required') && (form.get('image')?.dirty||form.get('image')?.touched )" style="color:red;">Введите ссылку на изображение</span> 
         </div>
       </mat-form-field>
       <mat-form-field>
@@ -80,6 +81,7 @@
           </mat-label>
 
             <input type="text" matInput  formControlName="name" id="name">
+            <span *ngIf="form.get('name')?.hasError('required') && (form.get('name')?.dirty||form.get('name')?.touched )" style="color:red;">Введите имя</span> 
         </div>
       </mat-form-field>
       <mat-form-field>
@@ -90,6 +92,7 @@
         </mat-label>
 
             <input type="text" matInput  formControlName="short_description" id="short_description">
+            <span *ngIf="form.get('short_description')?.hasError('required') && (form.get('short_description')?.dirty||form.get('short_description')?.touched )" style="color:red;">Введите описание</span> 
         </div>
       </mat-form-field>
       <mat-form-field>
@@ -100,6 +103,7 @@
          </mat-label>
 
           <input type="text" matInput   formControlName="facebook" id="facebook">
+          <span *ngIf="form.get('facebook')?.hasError('required') && (form.get('facebook')?.dirty||form.get('facebook')?.touched )" style="color:red;">Введите изображение соц сети</span> 
        </div>
       </mat-form-field>
       <mat-form-field>
@@ -110,6 +114,7 @@
         </mat-label>
 
           <input type="text" matInput  formControlName="twiter" id="twiter">
+          <span *ngIf="form.get('twiter')?.hasError('required') && (form.get('twiter')?.dirty||form.get('twiter')?.touched )" style="color:red;">Введите изображение соц сети</span> 
       </div>
     </mat-form-field>
     <mat-form-field>
@@ -120,6 +125,7 @@
         </mat-label>
 
           <input type="text" matInput formControlName="instagram" id="instagram">
+          <span *ngIf="form.get('instagram')?.hasError('required') && (form.get('instagram')?.dirty||form.get('instagram')?.touched )" style="color:red;">Введите изображение соц сети</span> 
       </div>
     </mat-form-field>
 
@@ -130,11 +136,12 @@
         </mat-label>
 
           <input type="text"matInput  formControlName="in" id="in">
+          <span *ngIf="form.get('in')?.hasError('required') && (form.get('in')?.dirty||form.get('in')?.touched )" style="color:red;">Введите изображение соц сети</span> 
       </div>
 
       </mat-form-field>
-        <button type="submit" mat-button >Save</button>
-      
+        <button type="submit" mat-button  [disabled]="this.form.invalid">Save</button>
+        <div class="alert_flex" *ngIf="sucsess" style="color:green">данные успешно обновлены</div>
     </form>
     
     </div>

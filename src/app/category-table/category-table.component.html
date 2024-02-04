@@ -3,28 +3,25 @@
 </div>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-  
-    <!-- Position Column -->
+
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef> ID. </th>
       <td mat-cell *matCellDef="let element"> {{element.id}} </td>
     </ng-container>
   
-    <!-- Name Column -->
+
     <ng-container matColumnDef="image">
       <th mat-header-cell *matHeaderCellDef> image </th>
       <td mat-cell *matCellDef="let element"> <img [src]="element.image"> </td>
     </ng-container>
   
-    <!-- Weight Column -->
+
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef> title </th>
       <td mat-cell *matCellDef="let element"> {{element.title}} </td>
     </ng-container>
   
-    <!-- Symbol Column -->
+
     <ng-container matColumnDef="short_description">
       <th mat-header-cell *matHeaderCellDef> Description </th>
       <td mat-cell *matCellDef="let element"> {{element.short_description}} </td>
@@ -49,8 +46,11 @@
           <mat-label for="image">
             image
           </mat-label>
-
+      
+      
             <input type="text" matInput  formControlName="image" id="image">
+            <span *ngIf="form.get('image')?.hasError('required') && (form.get('image')?.dirty||form.get('image')?.touched )" style="color:red;">Введите ссылку на изображение</span> 
+
         </div>
       </mat-form-field>
       <mat-form-field>
@@ -60,6 +60,7 @@
           </mat-label>
 
             <input type="text" matInput  formControlName="title" id="title">
+            <span *ngIf="form.get('title')?.hasError('required') && (form.get('title')?.dirty||form.get('title')?.touched )" style="color:red;">Введите оглавление</span> 
         </div>
       </mat-form-field>
       <mat-form-field>
@@ -70,10 +71,11 @@
         </mat-label>
 
             <input type="text" matInput  formControlName="short_description" id="short_description">
+            <span *ngIf="form.get('short_description')?.hasError('required') && (form.get('short_description')?.dirty||form.get('short_description')?.touched )" style="color:red;">Введите краткое описание</span> 
         </div>
       </mat-form-field>
-        <button type="submit" mat-button >Save</button>
-      
+        <button type="submit" mat-button [disabled]="this.form.invalid" >Save</button>
+        <div class="alert_flex" *ngIf="sucsess" style="color:green">данные успешно обновлены</div>
     </form>
     
     </div>

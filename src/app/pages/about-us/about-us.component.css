@@ -68,6 +68,7 @@ max-width: 480px;
 .relative{
     position: relative;
     top: 50px;
+    z-index: 2;
     
 }
 .page4_section_flex{
@@ -364,7 +365,7 @@ padding-bottom: 20px;
     .page4_section2_flex[_ngcontent-ng-c3745762395]{
         flex-direction: column;
         align-items: center;
-        position: relative;
+        position: unset;
         top: 45px;
         left: 153px;
         display: flex;
@@ -373,6 +374,12 @@ padding-bottom: 20px;
     }
     .page4_section_background{
         height: 550px;
+    }
+    .relative{
+        position: unset;
+    }
+    .absolute{
+        position: unset;
     }
     .page4_section3_block[_ngcontent-ng-c3745762395] {
         padding: unset;

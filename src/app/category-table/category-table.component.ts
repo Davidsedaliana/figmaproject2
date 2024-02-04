@@ -25,6 +25,7 @@ let ELEMENT_DATA: allposts[] = [
   styleUrls: ['./category-table.component.css']
 })
 export class CategoryTableComponent implements OnInit {
+  sucsess:boolean=false
   bool:boolean=false;
   type:string='Add'
   index:number=0
@@ -126,7 +127,11 @@ export class CategoryTableComponent implements OnInit {
         this.authorsGet() 
       })
     }
- 
+    this.sucsess=true
+    setTimeout(() => {
+      this.sucsess=false
+    
+      }, 30000);
   }
 
  displayedColumns: string[] = ['id', 'image', 'title', 'short_description','action'];

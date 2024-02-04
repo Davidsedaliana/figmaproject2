@@ -23,6 +23,7 @@ let ELEMENT_DATA: authors[] = [
   styleUrls: ['./authors-table.component.css']
 })
 export class AuthorsTableComponent implements OnInit {
+  sucsess:boolean=false
   index:number=0
   id!:number
   image!:string
@@ -40,6 +41,7 @@ export class AuthorsTableComponent implements OnInit {
     this.form.reset()
     this.type='Add'
   }
+  
   authorsGet(){
     this.requestService.getData<authors[]>(environment.usersInfo.get).subscribe(author=>{
       ELEMENT_DATA=author
@@ -51,7 +53,7 @@ export class AuthorsTableComponent implements OnInit {
    
   }
     ngOnInit(): void {
-   
+ 
       this.requestService.getData<authors[]>(environment.usersInfo.get).subscribe(author=>{
         ELEMENT_DATA=author
       this.dataSource = ELEMENT_DATA;
@@ -120,6 +122,8 @@ export class AuthorsTableComponent implements OnInit {
       console.log(result);
       this.authorsGet()
     })
+    
+
     }else if(this.type ==='edit'){
       this.initForm()
       const editUser:authors = {
@@ -136,7 +140,11 @@ export class AuthorsTableComponent implements OnInit {
         this.authorsGet() 
       })
     }
- 
+    this.sucsess=true
+    setTimeout(() => {
+      this.sucsess=false
+    
+      }, 30000);
   }
 
   displayedColumns: string[] = ['id', 'image', 'name', 'short_description','facebook','twiter','instagram','in','action'];

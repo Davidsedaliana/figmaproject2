@@ -1,8 +1,8 @@
 {
   "category": [
     {
-      "image": "assets/images/icon.jpg",
-      "title": "Business",
+      "image": "assets/images/cyborg.png",
+      "title": "Technology",
       "short_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
       "id": 1
     },

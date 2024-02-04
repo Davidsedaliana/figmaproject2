@@ -2,13 +2,20 @@ form{
     position: fixed;
     margin: auto;
     display: flex;
+    overflow: scroll;
     flex-direction: column;
-    top:100px;
-    left:600px;
+    top: 100px;
+    left: 35%;
     width: 700px;
     background-color: rgba(255, 255, 255, 0.397);
     font-size: 40px;
     text-transform: uppercase;
     align-items: center;
+    height: 500px;
+
 }
 
+.alert_flex{
+    display: flex;
+    justify-content: center;
+}
